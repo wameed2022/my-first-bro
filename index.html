@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New City</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- WOW.js for animations -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <h1 class="display-4"
+              style="font-family: 'Yuji Mai', sans-serif;">New City 🏙️</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarExample01" aria-controls="navbarExample01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarExample01">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#main">عقارات 🏡</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#serves">خدماتنا 🛠️</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">حول 📜</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Background Image Section -->
+      <div class="p-5 text-center bg-image"
+        style="background-image: url('./img/افضل.webp'); height: 400px; background-size: cover; margin-top: 80px;">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3 display-3 animate__animated animate__fadeIn">New
+                City</h1>
+              <h4
+                class="mb-3 animate__animated animate__fadeIn animate__delay-1s">افضل
+                العقارات بأفضل الأسعار 💰</h4>
+              <a
+                class="btn btn-outline-light btn-lg animate__animated animate__fadeIn animate__delay-2s"
+                href="#main" role="button">بدء التصفح 🚀</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container-fluid" id="main">
+      <div class="row my-5">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-4">عقاراتنا 🏠</h2>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselExample1" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأفضل الأسعار في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showSpecs(1)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <div id="specs1" class="specs-overlay" style="display: none;">
+                <h6>المواصفات:</h6>
+                <ul>
+                  <li>الموقع: منطقة استراتيجية</li>
+                  <li>المساحة: 120 متر مربع</li>
+                  <li>السعر: 1,000,000 جنيه</li>
+                  <li>النوع: شقة سكنية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 2 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselExample2" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأفضل الأسعار في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showSpecs(2)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <div id="specs2" class="specs-overlay" style="display: none;">
+                <h6>المواصفات:</h6>
+                <ul>
+                  <li>الموقع: منطقة استراتيجية</li>
+                  <li>المساحة: 120 متر مربع</li>
+                  <li>السعر: 1,000,000 جنيه</li>
+                  <li>النوع: شقة سكنية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 3 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselExample3" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample3" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأفضل الأسعار في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showSpecs(3)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <div id="specs3" class="specs-overlay" style="display: none;">
+                <h6>المواصفات:</h6>
+                <ul>
+                  <li>الموقع: منطقة استراتيجية</li>
+                  <li>المساحة: 120 متر مربع</li>
+                  <li>السعر: 1,000,000 جنيه</li>
+                  <li>النوع: شقة سكنية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 4 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselExample4" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample4" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأفضل الأسعار في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showSpecs(4)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <div id="specs4" class="specs-overlay" style="display: none;">
+                <h6>المواصفات:</h6>
+                <ul>
+                  <li>الموقع: منطقة استراتيجية</li>
+                  <li>المساحة: 120 متر مربع</li>
+                  <li>السعر: 1,000,000 جنيه</li>
+                  <li>النوع: شقة سكنية</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function showSpecs(cardId) {
+          const specs = document.getElementById('specs' + cardId);
+          const allSpecs = document.querySelectorAll('.specs-overlay');
+          allSpecs.forEach(function(spec) {
+            spec.style.display = 'none';
+          });
+          specs.style.display = 'block';
+        }
+      </script>
+
+      <div class="row my-3">
+        <!-- كارت 1 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselProperty1" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Property Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Property Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Property Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProperty1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showDetails(1)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <!-- تفاصيل الكارت 1 -->
+            <div id="details1" class="details-overlay">
+              <h6>المواصفات:</h6>
+              <ul>
+                <li>الموقع: منطقة سكنية متميزة</li>
+                <li>المساحة: 120 متر مربع</li>
+                <li>السعر: 1,000,000 جنيه</li>
+                <li>النوع: منزل سكني</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 2 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselProperty2" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Property Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Property Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Property Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselProperty2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProperty2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showDetails(2)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <!-- تفاصيل الكارت 2 -->
+            <div id="details2" class="details-overlay">
+              <h6>المواصفات:</h6>
+              <ul>
+                <li>الموقع: منطقة سكنية متميزة</li>
+                <li>المساحة: 120 متر مربع</li>
+                <li>السعر: 1,000,000 جنيه</li>
+                <li>النوع: منزل سكني</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 3 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselProperty3" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Property Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Property Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Property Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselProperty3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProperty3" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showDetails(3)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <!-- تفاصيل الكارت 3 -->
+            <div id="details3" class="details-overlay">
+              <h6>المواصفات:</h6>
+              <ul>
+                <li>الموقع: منطقة سكنية متميزة</li>
+                <li>المساحة: 120 متر مربع</li>
+                <li>السعر: 1,000,000 جنيه</li>
+                <li>النوع: منزل سكني</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- كارت 4 -->
+        <div class="col-lg-3 mb-4">
+          <div class="card shadow-lg position-relative">
+            <div id="carouselProperty4" class="carousel slide"
+              data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/images.jpeg"
+                    class="d-block w-100 card-img-top" alt="Property Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/1-1567604.webp"
+                    class="d-block w-100 card-img-top" alt="Property Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/افضل.webp" class="d-block w-100 card-img-top"
+                    alt="Property Image 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselProperty4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProperty4" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">أفضل العقارات</h5>
+              <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في
+                السوق.</p>
+              <button class="btn btn-info" onclick="showDetails(4)">عرض
+                التفاصيل</button>
+              <a
+                href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع"
+                class="btn" style="background-color: green;">
+                واتساب <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <!-- تفاصيل الكارت 4 -->
+            <div id="details4" class="details-overlay">
+              <h6>المواصفات:</h6>
+              <ul>
+                <li>الموقع: منطقة سكنية متميزة</li>
+                <li>المساحة: 120 متر مربع</li>
+                <li>السعر: 1,000,000 جنيه</li>
+                <li>النوع: منزل سكني</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+  function showDetails(cardId) {
+    const details = document.getElementById('details' + cardId);
+    const allDetails = document.querySelectorAll('.details-overlay');
+    allDetails.forEach(function(detail) {
+      detail.style.display = 'none'; // إخفاء كافة التفاصيل
+    });
+    details.style.display = 'block'; // إظهار التفاصيل الخاصة بالكارت
+  }
+      </script>
+
+
+
+<div class="row my-3">
+  <!-- كارت 5 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty5" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty5" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(5)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 5 -->
+      <div id="details5" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة سكنية متميزة</li>
+          <li>المساحة: 150 متر مربع</li>
+          <li>السعر: 1,500,000 جنيه</li>
+          <li>النوع: فيلا سكنية</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 6 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty6" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty6" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(6)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 6 -->
+      <div id="details6" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة سكنية متميزة</li>
+          <li>المساحة: 130 متر مربع</li>
+          <li>السعر: 1,300,000 جنيه</li>
+          <li>النوع: شقة سكنية</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 7 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty7" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty7" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty7" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(7)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 7 -->
+      <div id="details7" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة سكنية متميزة</li>
+          <li>المساحة: 140 متر مربع</li>
+          <li>السعر: 1,400,000 جنيه</li>
+          <li>النوع: دوبلكس</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 8 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty8" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty8" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty8" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(8)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 8 -->
+      <div id="details8" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة سكنية متميزة</li>
+          <li>المساحة: 160 متر مربع</li>
+          <li>السعر: 1,600,000 جنيه</li>
+          <li>النوع: شقة سكنية</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showDetails(cardId) {
+    const details = document.getElementById('details' + cardId);
+    const allDetails = document.querySelectorAll('.details-overlay');
+    allDetails.forEach(function(detail) {
+      detail.style.display = 'none'; // إخفاء كافة التفاصيل
+    });
+    details.style.display = 'block'; // إظهار التفاصيل الخاصة بالكارت
+  }
+</script>
+
+<div class="row my-3">
+  <!-- كارت 9 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty9" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty9" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty9" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(9)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 9 -->
+      <div id="details9" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة سكنية راقية</li>
+          <li>المساحة: 160 متر مربع</li>
+          <li>السعر: 2,200,000 جنيه</li>
+          <li>النوع: شقة دوبلكس</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 10 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty10" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty10" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty10" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(10)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 10 -->
+      <div id="details10" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: بالقرب من البحر</li>
+          <li>المساحة: 200 متر مربع</li>
+          <li>السعر: 3,000,000 جنيه</li>
+          <li>النوع: فيلا مع حديقة</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 11 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty11" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty11" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty11" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(11)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 11 -->
+      <div id="details11" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: في وسط المدينة</li>
+          <li>المساحة: 220 متر مربع</li>
+          <li>السعر: 2,800,000 جنيه</li>
+          <li>النوع: شقة فاخرة</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 12 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty12" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty12" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty12" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">استثمر في أفضل العقارات بأسعار تنافسية في السوق.</p>
+        <button class="btn btn-info" onclick="showDetails(12)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,000,000%20جنيه%0Aالمساحة:%20120%20متر%20مربع" class="btn" style="background-color: green;">
+          واتساب <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <!-- تفاصيل الكارت 12 -->
+      <div id="details12" class="details-overlay">
+        <h6>المواصفات:</h6>
+        <ul>
+          <li>الموقع: منطقة قريبة من المولات التجارية</li>
+          <li>المساحة: 250 متر مربع</li>
+          <li>السعر: 4,000,000 جنيه</li>
+          <li>النوع: فيلا مع مسبح خاص</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row my-3">
+  <!-- كارت 13 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty13" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty13" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty13" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">شقة للبيع في موقع ممتاز.</p>
+        <button class="btn btn-info" onclick="showDetails(13)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%201,500,000%20جنيه%0Aالمساحة:%20150%20متر%20مربع"
+           class="btn" style="background-color: green;">واتساب <i class="fa-brands fa-whatsapp"></i></a>
+        <div id="details13" class="specs-overlay" style="display: none;">
+          <h6>المواصفات:</h6>
+          <ul>
+            <li>الموقع: حي راقٍ</li>
+            <li>المساحة: 150 متر مربع</li>
+            <li>السعر: 1,500,000 جنيه</li>
+            <li>النوع: شقة سكنية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 14 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty14" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty14" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty14" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">فيلا مميزة للبيع في منطقة راقية.</p>
+        <button class="btn btn-info" onclick="showDetails(14)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%202,000,000%20جنيه%0Aالمساحة:%20200%20متر%20مربع"
+           class="btn" style="background-color: green;">واتساب <i class="fa-brands fa-whatsapp"></i></a>
+        <div id="details14" class="specs-overlay" style="display: none;">
+          <h6>المواصفات:</h6>
+          <ul>
+            <li>الموقع: منطقة هادئة ومميزة</li>
+            <li>المساحة: 200 متر مربع</li>
+            <li>السعر: 2,000,000 جنيه</li>
+            <li>النوع: فيلا سكنية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 15 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty15" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty15" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty15" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">أرض للبيع في موقع استراتيجي.</p>
+        <button class="btn btn-info" onclick="showDetails(15)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%202,500,000%20جنيه%0Aالمساحة:%20500%20متر%20مربع"
+           class="btn" style="background-color: green;">واتساب <i class="fa-brands fa-whatsapp"></i></a>
+        <div id="details15" class="specs-overlay" style="display: none;">
+          <h6>المواصفات:</h6>
+          <ul>
+            <li>الموقع: منطقة تجارية استراتيجية</li>
+            <li>المساحة: 500 متر مربع</li>
+            <li>السعر: 2,500,000 جنيه</li>
+            <li>النوع: أرض تجارية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- كارت 16 -->
+  <div class="col-lg-3 mb-4">
+    <div class="card shadow-lg position-relative">
+      <div id="carouselProperty16" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/images.jpeg" class="d-block w-100 card-img-top" alt="Property Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1-1567604.webp" class="d-block w-100 card-img-top" alt="Property Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/افضل.webp" class="d-block w-100 card-img-top" alt="Property Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty16" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty16" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">أفضل العقارات</h5>
+        <p class="card-text">مزرعة للبيع في موقع مميز.</p>
+        <button class="btn btn-info" onclick="showDetails(16)">عرض التفاصيل</button>
+        <a href="https://wa.me/201111600093?text=أنا%20مهتم%20بالعقار%20التالي:%0A%0Aالعنوان:%20أفضل%20العقارات%0Aالسعر:%202,800,000%20جنيه%0Aالمساحة:%20600%20متر%20مربع"
+           class="btn" style="background-color: green;">واتساب <i class="fa-brands fa-whatsapp"></i></a>
+        <div id="details16" class="specs-overlay" style="display: none;">
+          <h6>المواصفات:</h6>
+          <ul>
+            <li>الموقع: موقع هادئ ومناسب للزراعة</li>
+            <li>المساحة: 600 متر مربع</li>
+            <li>السعر: 2,800,000 جنيه</li>
+            <li>النوع: مزرعة</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- Services Section -->
+    <div class="container-fluid" id="serves">
+      <div class="row my-5">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-4">خدماتنا 🛠️</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="service-card">
+            <img src="./img/1-1567604.webp" class="img-fluid" alt="بيع" />
+            <h3>بيع العقارات 🏠</h3>
+            <p>نساعدك في بيع عقارك بأفضل الأسعار وبأقل وقت ممكن.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="service-card">
+            <img src="./img/1-1567604.webp" class="img-fluid" alt="شراء" />
+            <h3>شراء العقارات 🛍️</h3>
+            <p>نساعدك في شراء أفضل العقارات حسب احتياجاتك وميزانيتك.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button to open the form -->
+      <div class="text-center my-5">
+        <button class="btn btn-success" data-bs-toggle="modal"
+          data-bs-target="#contactFormModal">طلب الخدمة عبر واتساب</button>
+      </div>
+
+      <!-- Modal Form -->
+      <div class="modal fade" id="contactFormModal" tabindex="-1"
+        aria-labelledby="contactFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactFormModalLabel">تواصل معنا عبر
+                واتساب</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">الاسم</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">الرقم</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="area" class="form-label">المنطقة</label>
+                  <input type="text" class="form-control" id="area" required>
+                </div>
+                <div class="mb-3">
+                  <label for="floor" class="form-label">العنوان</label>
+                  <input type="text" class="form-control" id="floor" required>
+                </div>
+                <div class="mb-3">
+                  <label for="areaSize" class="form-label">نوع العقد</label>
+                  <input type="text" class="form-control" id="areaSize"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="areaSize" class="form-label">المساحة</label>
+                  <input type="number" class="form-control" id="areaSize"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="areaSize" class="form-label">ملاحظات</label>
+                  <input type="text" class="form-control" id="areaSize"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="budget" class="form-label">السعر</label>
+                  <input type="number" class="form-control" id="budget"
+                    required>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get the form values
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const area = document.getElementById('area').value;
+    const floor = document.getElementById('floor').value;
+    const areaSize = document.getElementById('areaSize').value;
+    const budget = document.getElementById('budget').value;
+
+    // Create the WhatsApp message
+    const whatsappMessage = `الاسم: ${name}%0Aالرقم: ${phone}%0Aالمنطقة: ${area}%0Aالدور: ${floor}%0Aالمساحة: ${areaSize} متر²%0Aالميزانية: ${budget}`;
+
+    // Open WhatsApp with the message
+    const whatsappUrl = `https://wa.me/201111600093?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+
+    // Close the modal
+    $('#contactFormModal').modal('hide');
+  });
+</script>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-lg-start bg-dark text-white py-5"
+      id="about">
+      <section class="d-flex justify-content-center mb-4">
+        <div class="me-5">
+          <span>تابعنا على شبكات التواصل الاجتماعي:</span>
+        </div>
+        <div>
+          <a href="#" class="me-4 text-white"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="#" class="me-4 text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="me-4 text-white"><i class="fab fa-google"></i></a>
+          <a href="#" class="me-4 text-white"><i
+              class="fab fa-instagram"></i></a>
+          <a href="#" class="me-4 text-white"><i
+              class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+      <section>
+        <div class="container text-center">
+          <h6 class="text-uppercase mb-4">New City 🏙️</h6>
+          <p>نحن نقدم أفضل العقارات بأسعار منافسة وفي أفضل المواقع.</p>
+        </div>
+      </section>
+      <div class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 حقوق الطبع والنشر:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Golden
+          Code</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js for animations -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
